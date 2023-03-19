@@ -27,6 +27,11 @@ Database with menu items linked to ingredients and a value for how many days eac
 
 Listen for message from frontend to select all viable menu items from DB. Once all viable menu items have been selected, trigger weighted selection. Generate menu as list. Pull, according to each menu item, the related ingredients. If an item appears twice (say, chicken breast) do not list it twice, merely display the total count of that item for the week. Provide full list of weekly ingredients below the menu. 
 
+Return this to the front end to display.
+
+Listen to the frontend for a message to ADD or UPDATE items in the menu. When the backend receives these items it must confirm that the data is correct. And sense of malformed input will be sanitised or dropped by the input statement and replaced with NULL values for everything except the meal name.  
+Each meal will have a row in the database. Each meal must have a total number of portions. If no occasion value is given we will assume that it is a regular meal. Ingredients will be added to the ingredients table if only they are not currently present. Otherwise a link between the new menu item and the existing ingredient will be created.
+
 ### Nuts and bolts: Frontend
 
 A web page that will allow you to trigger the generation of a menu and then display the menu back to you. A seperate page that allows you to add/edit items to the menu. The add/edit page should also display the menu and allow you to select which item to edit.
