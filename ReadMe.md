@@ -25,6 +25,12 @@ A special flag should be present as certain meals are only viable at certain tim
 
 Database with menu items linked to ingredients and a value for how many days each meal will last for. Another column for when it was last picked and also its rotation weighting. A special occasions column. If there is a date present then that meal is placed on that date. Otherwise it is ignored. 
 
+### Nuts and bolts: Frontend
+
+A web page that will allow you to trigger the generation of a menu and then display the menu back to you. A seperate page that allows you to add/edit items to the menu. The add/edit page should also display the menu and allow you to select which item to edit.
+
+The add/edit page needs a number of protections in place. It will need stored/reflected XSS protections as there is a chance that someone could add malicious HTML to the DB and that be reflected back to a user. It will also need a means of ensuring entered data doesn't allow for DB manipulation, destruction, or escape. 
+
 ### Meals we can cook
 + Chilli con carne
 + Beef stroganoff 
