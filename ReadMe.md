@@ -18,6 +18,8 @@ A feature to allow for the removal or change of a menu item. Eg removing or upda
 
 To be fleshed out
 
+Add feature to reduce food waste. Have carrots etc in all meals in a week means you get through the bag of carrots. 
+
 Special occasion flag? 
 A special flag should be present as certain meals are only viable at certain times of the year. These meals would be, for example, Christmas Dinner, or are kept for known special occasions like anniversary meals etc.
 
